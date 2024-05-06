@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0 2rem;
+  padding: 6px 0 0 1rem;
+  background-color: rgb(231, 231, 248);
+}
+.gr_gradient {
+  @apply bg-gradient-to-r from-gray-600 to-red-600 bg-clip-text text-transparent;
+}
+
+.aim-area-start {
+  margin: 60px auto auto auto;
+  width: 1200px;
+  height: 550px;
+}
+
+.aim-area {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .aim-area-start {
+    margin: 60px auto auto auto;
+    width: 950px;
+    height: 500px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .aim-area-start {
+    margin: 50px auto auto auto;
+    width: 680px;
+    height: 500px;
+  }
+}
+@media (min-width: 660px) and (max-width: 768px) {
+  .aim-area-start {
+    margin: 60px auto auto auto;
+    width: 580px;
+    height: 450px;
+  }
+}
+@media (min-width: 560px) and (max-width: 660px) {
+  .aim-area-start {
+    margin: 35px auto auto auto;
+    width: 450px;
+    height: 500px;
+  }
+}
