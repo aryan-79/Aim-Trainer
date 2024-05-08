@@ -54,7 +54,6 @@ const Home = () => {
     if (count > 0) {
       setCount((prev) => prev - 1);
     }
-    // console.log(count);
 
     setPosition(generateRandomPosition());
   };

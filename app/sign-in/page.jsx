@@ -17,7 +17,7 @@ const SignInPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("data", data);
+    // console.log("data", data);
     signIn("credentials", { ...data, redirect: false });
     router.push("/");
   };

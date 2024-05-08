@@ -34,14 +34,16 @@ const NavBar = () => {
         </span>
       </div>
 
-      {pathname.includes("/sign-in") || pathname.includes("/sign-up") ? (
+      {pathname.includes("/sign-in") ||
+      pathname.includes("/sign-up") ||
+      pathname.includes("/profile") ? (
         <></>
       ) : (
         <>
           {session?.user ? (
             <div className="flex items-center justify-around gap-12">
               <Link
-                href="/stats"
+                href={`/profile/${session.user.id}`}
                 className="font-semibold text-xl hover:text-gray-600"
               >
                 Your Stats
@@ -52,7 +54,7 @@ const NavBar = () => {
               >
                 Sign Out
               </button>
-              <Link href="/profile">
+              <Link href={`/profile/${session.user.id}`}>
                 {session.user.image ? (
                   <div className="rounded-full aspect-square overflow-hidden">
                     <Image

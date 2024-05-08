@@ -72,7 +72,6 @@ const handler = NextAuth({
           }
           return true;
         } catch (error) {
-          console.log("error in signin");
           console.error(`Error: ${error.message}`);
           return false;
         }

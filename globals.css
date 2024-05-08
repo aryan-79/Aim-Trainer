@@ -49,3 +49,16 @@ body {
     height: 500px;
   }
 }
+
+.grid-header {
+  display: grid;
+  grid-template-columns: 40% 1fr 1fr;
+  font: 2rem "Roboto", sans-serif;
+  font-weight: bold;
+}
+.grid-element {
+  display: grid;
+  grid-template-columns: 40% 1fr 1fr;
+  font: 1.25rem "Roboto", sans-serif;
+  font-weight: 500;
+}
